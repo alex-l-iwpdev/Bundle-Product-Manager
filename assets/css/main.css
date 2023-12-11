@@ -1,0 +1,81 @@
+.single-product .product-bundle-block .quantity,
+.single-product .product-bundle-block .quick-buy,
+.single-product .product-bundle-block .woosc-compare,
+.single-product .product-bundle-block .woosw-btn {
+	display: none !important;
+}
+.product-bundle-block {
+	margin-bottom: 50px;
+}
+
+.single-product .type-product .type-product {
+	width: 100%;
+}
+
+.single-product .type-product .type-product .product-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 15px;
+	width: calc(100% - 155px);
+	align-items: center;
+}
+
+.single-product .type-product .product-bundle-block,
+.single-product .type-product .type-product {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.single-product .product-count-view {
+	margin-bottom: 40px !important;
+}
+
+.single-product .type-product .type-product {
+	border: 1px solid #e5e5e5;
+	padding: 5px;
+	align-items: center;
+}
+
+.single-product .type-product .type-product .product-bundle-block .woosw-wishlist {
+	display: none;
+}
+
+.single-product .type-product .type-product .add-to-cart-product-bundle {
+	width: 140px;
+}
+.single-product .product-bundle-block .single_add_to_cart_button {
+	width: 140px;
+	padding: 0 !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+}
+.single-product .type-product .type-product .product-content .product-thumb img {
+	width: 100px !important;
+	height: 100px !important;
+}
+
+.single-product .type-product .type-product .product-content .product-info {
+	width: calc(100% - 115px);
+	padding-bottom: 0;
+}
+.single-product .type-product .type-product .product-content .product-info .product-title a{
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+.single-product .type-product .type-product .product-content .product-info .product-title a:hover{
+	text-decoration: underline;
+	color: #0693e3;
+}
+.single-product .type-product .type-product .woocommerce-Price-amount{
+	font-size: 14px;
+}
+
+.single-product .type-product .type-product .product-content .product-info .product-title {
+	font-size: 16px;
+}
