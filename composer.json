@@ -6,6 +6,11 @@
       "BundleProductManager\\": "src/php"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "BundleProductManager\\": "src/php"
+    }
+  },
   "prefer-stable": true,
   "authors": [
     {
