@@ -17,7 +17,7 @@ jQuery( document ).ready( function( $ ) {
 		let timeout = null;
 
 		searchEL.on( 'input', function( e ) {
-			if ( /[a-zA-Z0-9!@#$%^&*()_+{}\[\]:;<>,.?~\\/-\s]/.test( e.target.value ) ) {
+			if ( /[a-zA-Z0-9А-Яа-я!@#$%^&*()_+{}\[\]:;<>,.?~\\/-\s]/.test( e.target.value ) ) {
 				string = e.target.value;
 
 				if ( string.length > 3 ) {

@@ -79,3 +79,7 @@
 .single-product .type-product .type-product .product-content .product-info .product-title {
 	font-size: 16px;
 }
+
+.product-bundle-block img {
+	width: 150px;
+}

@@ -84,12 +84,13 @@ class BPM_Output {
 				<div class="selected-products">
 					<?php
 					if ( ! empty( $product_bundle ) ) {
-						$query_search = new WP_Query(
-							[
-								'post_type' => 'product',
-								'post__in'  => $product_bundle,
-							]
-						);
+						$arg = [
+							'post_type'   => 'product',
+							'post_status' => 'publish',
+							'post__in'    => $product_bundle,
+						];
+
+						$query_search = new WP_Query( $arg );
 						while ( $query_search->have_posts() ) {
 							$query_search->the_post();
 
@@ -142,7 +143,7 @@ class BPM_Output {
 				]
 			);
 			?>
-			<div cellspacing="0" class="product-bundle-block">
+			<div class="product-bundle-block">
 				<?php
 				while ( $query_search->have_posts() ) {
 					$query_search->the_post();
