@@ -8,4 +8,3 @@ vendor/
 Thumbs.db
 quote.log
 yarn.lock
-phpcs.xml
