@@ -20,13 +20,6 @@ jobs:
         with:
           composer-options: "--no-dev --optimize-autoloader --classmap-authoritative"
 
-      - name: Install packages
-        run: |
-          corepack enable
-          yarn set version stable
-          yarn
-          yarn prod
-
       - name: WordPress Plugin Deploy
         id: deploy
         uses: 10up/action-wordpress-plugin-deploy@stable
