@@ -84,6 +84,9 @@
 
 #product_bundle_data_tab .preload {
 	display: none;
+	position: absolute;
+	right: 25px;
+	top: 10px;
 }
 
 #product_bundle_data_tab .preload img {

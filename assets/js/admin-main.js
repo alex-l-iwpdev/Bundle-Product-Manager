@@ -61,11 +61,7 @@ jQuery( document ).ready( function( $ ) {
 					flag = true;
 					outputProductList( res.data.productsList );
 				} else {
-					res.data.productsList(
-						{
-							error: res.message
-						}
-					);
+					noResult( res.data.message );
 				}
 				preloader.hide();
 			},
@@ -74,6 +70,20 @@ jQuery( document ).ready( function( $ ) {
 				//error logging
 			}
 		} );
+	}
+
+	/**
+	 * Output no result or errot.
+	 *
+	 * @param {string} message
+	 */
+	function noResult( message ) {
+		const resultSearchEl = $( '.result-search' );
+		let html = '<ul>';
+		html += '<li>' + message + '</li>';
+		html += '</ul>';
+
+		resultSearchEl.html( html );
 	}
 
 	/**

@@ -5,7 +5,7 @@ Tags: wordpress woocommerce, woocommerce plugin, product bundles, additional pro
 Requires at least: 6.0
 Tested up to: 6.3.1
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,3 +39,8 @@ sales with our plugin.
 = 1.0.1 =
 * Fix autoload class
 * Clear dev files
+
+= 1.0.2 =
+* Fix entering сyrillic characters
+* Fix style
+* Add output error

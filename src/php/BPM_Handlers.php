@@ -106,6 +106,8 @@ class BPM_Handlers {
 			}
 
 			wp_reset_postdata();
+		} else {
+			wp_send_json_error( [ 'message' => __( 'No results were found for your request', 'bundle-product-manager' ) ] );
 		}
 
 		wp_send_json_success( [ 'productsList' => $products_list ] );
