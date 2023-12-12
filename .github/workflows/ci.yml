@@ -1,4 +1,4 @@
-name: hCaptcha CI
+name: check WPCS
 
 on: [ push, pull_request ]
 
