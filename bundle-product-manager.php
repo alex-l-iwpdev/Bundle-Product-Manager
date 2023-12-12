@@ -75,9 +75,7 @@ if ( ! function_exists( 'bpmf_is_php_version' ) ) {
 	 * Check php version.
 	 *
 	 * @return bool
-	 * @noinspection ConstantCanBeUsedInspection
 	 */
-
 	function bpmf_is_php_version(): bool {
 		if ( version_compare( PHP_VERSION, BPM_PHP_REQUIRED_VERSION, '<' ) ) {
 			return false;

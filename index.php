@@ -1,2 +1,7 @@
 <?php
-// Silence is golden.
+/**
+ * Silence is golden.
+ *
+ * @package iwpdev/bundle-product-manager
+ */
+
