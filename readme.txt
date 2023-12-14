@@ -1,11 +1,11 @@
 === Bundle Product Manager ===
 Contributors: alexlavigin
 Donate link: https://www.paypal.com/donate/?hosted_button_id=WGUAU8B98FST6
-Tags: wordpress woocommerce, woocommerce plugin, product bundles, additional products, order customization, customer experience, sales enhancement, ecommerce solution, custom product sets
+Tags: woocommerce, woocommerce plugin, product bundles, additional products, order customization, customer experience, sales enhancement, ecommerce solution, custom product sets
 Requires at least: 6.0
 Tested up to: 6.3.1
 Requires PHP: 7.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,9 @@ Improve the customer experience and increase sales with our plugin.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 1.0.4 =
+* Small css fixes
 
 = 1.0.3 =
 * Excluding current product search

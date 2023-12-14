@@ -14,7 +14,7 @@
  * collect complex sets of products and easily customize their orders. Improve the customer experience and increase
  * sales with our plugin.
  *
- * Version: 1.0.3
+ * Version: 1.0.4
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Author: Alex Lavyhin
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Plugin version.
  */
-const BPM_VERSION = '1.0.3';
+const BPM_VERSION = '1.0.4';
 
 /**
  * Plugin path.
