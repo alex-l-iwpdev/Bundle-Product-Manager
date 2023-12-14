@@ -44,7 +44,8 @@ jQuery( document ).ready( function( $ ) {
 		const data = {
 			action: bpmAdminObject.searchProductAction,
 			nonce: bpmAdminObject.searchProductNonce,
-			searchString: string
+			searchString: string,
+			productID: $('#post_ID').val()
 		};
 
 		const preloader = $( '#product_bundle_data_tab .preload' );

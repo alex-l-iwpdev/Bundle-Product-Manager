@@ -13,10 +13,9 @@ Our WordPress WooCommerce plugin provides unique functionality by allowing you t
 
 == Description ==
 
-Our WordPress WooCommerce plugin provides unique functionality by allowing you to easily add multiple
-additional products to your main product before checkout. This is a convenient solution for customers who want to
-collect complex sets of products and easily customize their orders. Improve the customer experience and increase
-sales with our plugin.
+Our WordPress WooCommerce plugin provides unique functionality by allowing you to easily add multiple additional products to your main product before checkout.
+This is a convenient solution for customers who want to collect complex sets of products and easily customize their orders.
+Improve the customer experience and increase sales with our plugin.
 
 **Important!** Bundle Product Manager plugin requires an active WooCommerce plugin.
 
@@ -33,14 +32,18 @@ sales with our plugin.
 
 == Changelog ==
 
-= 1.0 =
-* Plugin Created
+= 1.0.3 =
+* Excluding current product search
+* Change screenshots
+
+= 1.0.2 =
+* Fix entering Cyrillic characters
+* Fix style
+* Add output error
 
 = 1.0.1 =
 * Fix autoload class
 * Clear dev files
 
-= 1.0.2 =
-* Fix entering сyrillic characters
-* Fix style
-* Add output error
+= 1.0 =
+* Plugin Created

@@ -76,7 +76,8 @@ class BPM_Handlers {
 			wp_send_json_error( [ 'message' => __( 'Invalid nonce code', 'bundle-product-manager' ) ] );
 		}
 
-		$string = ! empty( $_POST['searchString'] ) ? filter_var( wp_unslash( $_POST['searchString'] ), FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : null;
+		$string     = ! empty( $_POST['searchString'] ) ? filter_var( wp_unslash( $_POST['searchString'] ), FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : null;
+		$product_id = ! empty( $_POST['productID'] ) ? filter_var( wp_unslash( $_POST['productID'] ), FILTER_SANITIZE_FULL_SPECIAL_CHARS ) : null;
 
 		if ( empty( $string ) ) {
 			wp_send_json_error( [ 'message' => __( 'You sent an empty string', 'bundle-product-manager' ) ] );
@@ -84,9 +85,10 @@ class BPM_Handlers {
 
 		$query_search = new WP_Query(
 			[
-				'post_type'   => 'product',
-				'post_status' => 'publish',
-				's'           => $string,
+				'post_type'    => 'product',
+				'post_status'  => 'publish',
+				's'            => $string,
+				'post__not_in' => [ $product_id ],
 			]
 		);
 
