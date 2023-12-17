@@ -9,12 +9,9 @@
  *
  * Plugin Name: Bundle Product Manager for WooCommerce.
  * Plugin URI: https://i-wp-dev.com
- * Description: Our WordPress WooCommerce plugin provides unique functionality by allowing you to easily add multiple
- * additional products to your main product before checkout. This is a convenient solution for customers who want to
- * collect complex sets of products and easily customize their orders. Improve the customer experience and increase
- * sales with our plugin.
+ * Description: Our WordPress WooCommerce plugin provides unique functionality by allowing you to easily add multiple additional products to your main product before checkout. This is a convenient solution for customers who want to collect complex sets of products and easily customize their orders. Improve the customer experience and increase sales with our plugin.
  *
- * Version: 1.0.4
+ * Version: 1.0.5
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Author: Alex Lavyhin
@@ -37,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Plugin version.
  */
-const BPM_VERSION = '1.0.4';
+const BPM_VERSION = '1.0.5';
 
 /**
  * Plugin path.
@@ -124,5 +121,7 @@ if ( ! is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 
 	return;
 }
+
+load_plugin_textdomain( 'bundle-product-manager', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 new BPM_Main();

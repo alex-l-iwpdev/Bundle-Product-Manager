@@ -5,7 +5,7 @@ Tags: woocommerce, woocommerce plugin, product bundles, additional products, ord
 Requires at least: 6.0
 Tested up to: 6.3.1
 Requires PHP: 7.4
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,11 @@ Improve the customer experience and increase sales with our plugin.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 1.0.5 =
+* Fix scroll in search block
+* Added translations Ukrainian, Polish, Russian
+* Small css fixes
 
 = 1.0.4 =
 * Small css fixes

@@ -2,7 +2,7 @@
 	position: relative;
 }
 
-#product_bundle_data_tab .result-search ul {
+#product_bundle_data_tab .result-search {
 	position: absolute;
 	z-index: 99;
 	background: #fff;
@@ -13,13 +13,15 @@
 	width: 100%;
 	left: 162px;
 	box-sizing: border-box;
-}
-
-#product_bundle_data_tab .result-search ul:empty {
 	display: none;
 }
 
-#product_bundle_data_tab .result-search ul:before {
+#product_bundle_data_tab .result-search ul {
+	overflow-y: auto;
+	max-height: 200px;
+}
+
+#product_bundle_data_tab .result-search:before {
 	content: '';
 	position: absolute;
 	top: 0;

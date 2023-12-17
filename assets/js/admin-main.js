@@ -45,7 +45,7 @@ jQuery( document ).ready( function( $ ) {
 			action: bpmAdminObject.searchProductAction,
 			nonce: bpmAdminObject.searchProductNonce,
 			searchString: string,
-			productID: $('#post_ID').val()
+			productID: $( '#post_ID' ).val()
 		};
 
 		const preloader = $( '#product_bundle_data_tab .preload' );
@@ -65,6 +65,7 @@ jQuery( document ).ready( function( $ ) {
 					noResult( res.data.message );
 				}
 				preloader.hide();
+				$( '.result-search' ).show();
 			},
 			error: function( xhr ) {
 				console.log( 'error...', xhr );
@@ -109,9 +110,9 @@ jQuery( document ).ready( function( $ ) {
 		setOnFocus();
 
 		$( document ).mouseup( function( e ) {
-			let folder = $( '#product_bundle_data_tab .result-search ul, #product_bundle_data_tab input' );
+			let folder = $( '#product_bundle_data_tab .result-search, #product_bundle_data_tab input' );
 			if ( ! folder.is( e.target ) && folder.has( e.target ).length === 0 ) {
-				$( '#product_bundle_data_tab .result-search ul' ).hide();
+				$( '#product_bundle_data_tab .result-search' ).hide();
 			}
 		} );
 	}
@@ -162,7 +163,7 @@ jQuery( document ).ready( function( $ ) {
 		if ( inputEl.length ) {
 			inputEl.on( 'focus', function() {
 				if ( $( '.result-search ul' ).children().length > 0 ) {
-					$( this ).parents( '.options_group' ).find( '.result-search ul' ).show();
+					$( this ).parents( '.options_group' ).find( '.result-search' ).show();
 				}
 			} );
 		}
