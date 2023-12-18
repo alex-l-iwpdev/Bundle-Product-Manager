@@ -29,7 +29,7 @@ class BPM_Output {
 	private function init(): void {
 		add_filter( 'woocommerce_product_data_tabs', [ $this, 'bpm_add_product_bundle_tab' ] );
 		add_action( 'woocommerce_product_data_panels', [ $this, 'bpm_add_product_bundle_tab_fields' ] );
-		add_action( 'woocommerce_single_product_summary', [ $this, 'bpm_output_product_bundle' ], 25 );
+		add_action( 'woocommerce_after_add_to_cart_form', [ $this, 'bpm_output_product_bundle' ], 30,  );
 	}
 
 	/**

@@ -3,9 +3,9 @@ Contributors: alexlavigin
 Donate link: https://www.paypal.com/donate/?hosted_button_id=WGUAU8B98FST6
 Tags: woocommerce, woocommerce plugin, product bundles, additional products, order customization, customer experience, sales enhancement, ecommerce solution, custom product sets
 Requires at least: 6.0
-Tested up to: 6.3.1
+Tested up to: 6.4.2
 Requires PHP: 7.4
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,8 +32,11 @@ Improve the customer experience and increase sales with our plugin.
 
 == Changelog ==
 
+= 1.0.6 =
+* Fixed support for block themes
+
 = 1.0.5 =
-* Fix scroll in search block
+* Fixed scroll in search block
 * Added translations Ukrainian, Polish, Russian
 * Small css fixes
 
@@ -45,12 +48,12 @@ Improve the customer experience and increase sales with our plugin.
 * Change screenshots
 
 = 1.0.2 =
-* Fix entering Cyrillic characters
-* Fix style
+* Fixed entering Cyrillic characters
+* Fixed style
 * Add output error
 
 = 1.0.1 =
-* Fix autoload class
+* Fixed autoload class
 * Clear dev files
 
 = 1.0 =
