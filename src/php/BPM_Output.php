@@ -170,10 +170,16 @@ class BPM_Output {
 							</div>
 						</div>
 						<?php
-						if ( ! $product->is_sold_individually() ) {
+						if ( $product->get_type() !== 'variable' && ! $product->is_sold_individually() ) {
 							echo '<div class="add-to-cart-product-bundle" >';
 							// @codingStandardsIgnoreLine
 							echo woocommerce_simple_add_to_cart();
+							echo '</div>';
+						}
+
+						if ( 'variable' === $product->get_type() ) {
+							echo '<div class="add-to-cart-product-bundle" >';
+							echo '<a class="button product_type_variable" href="' . esc_url( get_the_permalink( $product->get_id() ) ) . '">' . esc_html( __( 'Choose a variation', 'bundle-product-manager' ) ) . '</a>';
 							echo '</div>';
 						}
 						?>
