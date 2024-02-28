@@ -173,7 +173,7 @@ class BPM_Output {
 						if ( $product->get_type() !== 'variable' && ! $product->is_sold_individually() ) {
 							echo '<div class="add-to-cart-product-bundle" >';
 							// @codingStandardsIgnoreLine
-							echo woocommerce_simple_add_to_cart();
+							self::bpm_get_cart_form_template( 'simple' );
 							echo '</div>';
 						}
 
@@ -191,5 +191,20 @@ class BPM_Output {
 			</div>
 			<?php
 		}
+	}
+
+	/**
+	 * Get cart form template.
+	 *
+	 * @param string $template_path Template path.
+	 *
+	 * @return void
+	 */
+	public function bpm_get_cart_form_template( string $template_path ): void {
+		if ( locate_template( $template_path . '.php' ) !== '' ) {
+			include get_stylesheet_directory() . '/bpm_template/simple.php';
+		}
+
+		include BPM_PATH . '/template/simple.php';
 	}
 }

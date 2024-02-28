@@ -76,6 +76,8 @@ class BPM_Main {
 				$min = '';
 			}
 
+			wp_enqueue_script( 'bpm_main', $url . '/assets/js/main' . $min . '.js', [], BPM_VERSION, true );
+
 			wp_enqueue_style( 'bpm_main', $url . '/assets/css/main' . $min . '.css', '', BPM_VERSION );
 		}
 	}
