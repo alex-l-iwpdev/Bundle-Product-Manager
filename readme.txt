@@ -3,9 +3,9 @@ Contributors: alexlavigin
 Donate link: https://www.paypal.com/donate/?hosted_button_id=WGUAU8B98FST6
 Tags: woocommerce, woocommerce plugin, product bundles, additional products, order customization, customer experience, sales enhancement, ecommerce solution, custom product sets
 Requires at least: 6.0
-Tested up to: 6.4.2
+Tested up to: 6.6.2
 Requires PHP: 7.4
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,15 @@ Improve the customer experience and increase sales with our plugin.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 1.0.9 =
+* Up version
+* Tested Wordpress version  6.6.2
+* Tested Woocommerce 9.3.3
+* Updating dependencies
+
+= 1.0.8 =
+* Fixed css/js
 
 = 1.0.7 =
 * Fixed variable products
